@@ -50,8 +50,7 @@
 ## Version
 v1.0.1 - Stable Release
 
-## Mit Hilfe von KI erstellt:
-#EOF
+
 
 
 ## Mit Hilfe von KI erstellt:
