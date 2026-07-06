@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Frittenautomat v1.0.0
 import os
 import argparse
 import ipaddress
@@ -22,7 +21,6 @@ def get_devices():
         for i in range(num_hosts):
             try:
                 host = fc.call_action('Hosts:1', 'GetGenericHostEntry', NewIndex=i)
-                # Wir nehmen jetzt ALLE Geräte (nicht mehr nur NewActive == 1)
                 ip = host.get('NewIPAddress') or ""
                 netzwerk = 'Gastnetz' if ip.startswith('192.168.179') else 'Heimnetz'
                 
@@ -40,7 +38,14 @@ def get_devices():
     return devices
 
 def main():
-    parser = argparse.ArgumentParser(description="FRITZ!Box Netzwerk-Inventur")
+    parser = argparse.ArgumentParser(
+        description="FRITZ!Box Netzwerk-Inventur v1.0.1",
+        add_help=True
+    )
+    
+    # explizite Definition für -help (mit einem Bindestrich) zur Vermeidung von Fehlern
+    parser.add_argument("-help", action="help", help="Zeige diese Hilfe an")
+    
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-n", "--name", action="store_true", help="Sortiert nach Hostname")
     group.add_argument("-i", "--ip", action="store_true", help="Sortiert nach IP-Adresse")
@@ -64,5 +69,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-#EOF
+
+
 ##  Mit Hilfe von KI erstellt:
+#EOF
