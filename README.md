@@ -1,4 +1,4 @@
-# Frittenautomat v1.0.0
+# Frittenautomat v1.0.1
 
 [DE] Ein robustes CLI-Tool zur Netzwerk-Inventur für FRITZ!Box-Router.  
 [ENG] A robust CLI tool for network inventory on FRITZ!Box routers.
@@ -20,20 +20,21 @@
 2. In Ordner wechseln: `cd frittenautomat`
 3. Installationsskript ausführen: `./install.sh`
 4. Konfiguration: `cp .env.example .env` und `.env` Datei mit Zugangsdaten anpassen.
-5. Ausführen: `./fritten-hosts.py`
+5. Ausführen: `./fritte.sh -n` oder `./fritte.sh -i`
 
 ### [ENG]
 1. Clone the repo: `git clone https://github.com/DEIN-USER/frittenautomat.git`
 2. Change directory: `cd frittenautomat`
 3. Run install script: `./install.sh`
 4. Configuration: `cp .env.example .env` and adjust the credentials.
-5. Execution: `./fritten-hosts.py`
+5. Execution: `./fritte.sh -n` or `./fritte.sh -i`
 
 ## Usage / Benutzung
-`python fritten-hosts.py [-n | -i]`
+`./fritte.sh [-n | -i]`
 
 - `-n`: Sortiert/Sort by Hostname
 - `-i`: Sortiert/Sort by IP-Address
+- `-help`: Zeigt die Hilfe an / Shows help
 
 ## Troubleshooting
 [DE] **Keine Verbindung zur FRITZ!Box?**
@@ -47,7 +48,11 @@
 3. Ensure your user account has permissions to perform TR-064 requests.
 
 ## Version
-v1.0.0 - Stable Release
+v1.0.1 - Stable Release
+
+## Mit Hilfe von KI erstellt:
+#EOF
+
 
 ## Mit Hilfe von KI erstellt:
 #EOF
