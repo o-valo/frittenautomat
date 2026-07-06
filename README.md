@@ -16,14 +16,14 @@
 ## Installation
 
 ### [DE]
-1. Repository klonen: `git clone https://github.com/DEIN-USER/frittenautomat.git`
+1. Repository klonen: `git clone https://github.com/o-valo/frittenautomat.git`
 2. In Ordner wechseln: `cd frittenautomat`
 3. Installationsskript ausführen: `./install.sh`
 4. Konfiguration: `cp .env.example .env` und `.env` Datei mit Zugangsdaten anpassen.
 5. Ausführen: `./fritte.sh -n` oder `./fritte.sh -i`
 
 ### [ENG]
-1. Clone the repo: `git clone https://github.com/DEIN-USER/frittenautomat.git`
+1. Clone the repo: `git clone https://github.com/o-valo/frittenautomat.git`
 2. Change directory: `cd frittenautomat`
 3. Run install script: `./install.sh`
 4. Configuration: `cp .env.example .env` and adjust the credentials.
@@ -49,9 +49,6 @@
 
 ## Version
 v1.0.1 - Stable Release
-
-
-
 
 ## Mit Hilfe von KI erstellt:
 #EOF
