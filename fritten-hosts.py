@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Frittenautomat v1.0.0
 import os
 import argparse
 import ipaddress
