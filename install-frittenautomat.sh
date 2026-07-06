@@ -1,4 +1,5 @@
 #!/bin/bash
+# Frittenautomat v1.0.0
 # install.sh - Automatisierte Installation
 
 echo "Installiere Frittenautomat..."
